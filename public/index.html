@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMDb Clone</title>
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div id="bgPoster" class="poster mask">
+      <div class="header-bar">
+        <img src="img /IMDB logo.svg" alt="IMDB Logo" class="logo">
+
+        <div class="search-box">
+          <input id="searchInput" type="text" placeholder="Search IMDb" />
+          <a id="addrespag" href="">
+            <i id="searchIcon" class="fas fa-search"></i>
+
+          </a>
+
+          <div class="search-dropdown">
+            <ul id="search"></ul>
+          </div>
+        </div>
+
+        <div class="genres">
+          <div class="genres-toggle">
+            <span>Genres</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="genres-menu">
+            <span>Action</span>
+            <span>Adventure</span>
+            <span>Animation</span>
+            <span>Biography</span>
+            <span>Comedy</span>
+            <span>Crime</span>
+            <span>Drama</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="infoTitle" class="info-title"></div>
+
+      <div class="dots" id="dots">
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="list" class="movie-list"></div>
+    <div id="pagination" class="pagination"></div>
+  </main>
+
+  <script src="src/script.js"></script>
+</body>
+
+</html>
